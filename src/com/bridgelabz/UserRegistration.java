@@ -56,9 +56,9 @@ public class UserRegistration {
         // For Password Case 1
         System.out.println("\nEnter your Password ");
         String password = scan.nextLine();
-        boolean check_password_case_1 = checkValidation.password_case_1(password);
+        boolean check_password_case = checkValidation.password_case_2(password);
 
-        if(check_password_case_1)
+        if(check_password_case)
             System.out.println("Valid Password");
         else
             System.out.println("Invalid Password");
