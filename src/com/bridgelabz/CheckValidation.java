@@ -20,7 +20,7 @@ public class CheckValidation {
 
     // Method For Email
     public boolean email(String email) {
-        String match = "^[A-Za-z0-9.]+@[a-zA-Z.]{2,}+$";
+        String match = "^[a-zA-Z0-9+.-]+@[a-zA-Z0-9.-]+$";
         boolean check = Pattern.matches(match,email);
         return check;
     }
